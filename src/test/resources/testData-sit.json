@@ -1,0 +1,10 @@
+{
+  "validateLoginFunctionality": [
+    {
+      "username": "Admin",
+      "password": "admin123",
+      "welcomeUser": "Welcome Paul"
+    }
+
+    ]
+}

@@ -1,0 +1,20 @@
+
+
+<suite name="Smoke Pack" thread-count ="4" parallel = "methods">        //thread-count is the maximum number of tests that can run in parallel
+    <parameter name = "environment" value="SIT"/>
+    <listeners>
+        <!-- Listner to retry the test cases incase the test failed to make sure the test did not fail due to environment issue -->
+            <!--listener class-name="com.automation.components.RetryTransformer"/-->
+        <Listener class-name="com.automation.components.TestActions"/>
+
+    </listeners>
+
+    <test name="OrangeCRMTests" preserve-order="true">
+        <classes>
+            <class name="OrangeCRMTests.LoginTests"/>
+                <include name = "validateLoginFunctionality"/>
+                <!--include name = "validateLoginFunctionalityUsingRandomData"/-->
+        </classes>
+    </test>
+
+</suite>

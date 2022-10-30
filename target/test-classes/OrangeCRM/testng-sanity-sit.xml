@@ -1,0 +1,14 @@
+<suite name="Smoke Pack">
+    <parameter name = "environment" value="SIT"/>
+    <listeners>
+        <Listener class-name="com.automation.components.TestActions"/>
+    </listeners>
+    <test name="OrangeCRMTests" preserve-order="true">
+        <classes>
+            <class name="OrangeCRMTests.LoginTests"/>
+                <include name = "validateLoginFunctionality"/>
+
+        </classes>
+    </test>
+
+</suite>
