@@ -112,7 +112,7 @@
           <configuration>
             <suiteXmlFiles>
               <!--suppress UnresolvedMavenProperty -->
-              <suiteXmlFile>${basedir}/src/test/resources/OrangeCRM/${testngFileName}.xml</suiteXmlFile>
+              <suiteXmlFile>${basedir}/src/test/resources/OrangeCRM/testng-sanity-sit.xml</suiteXmlFile>
             </suiteXmlFiles>
           </configuration>
         </plugin>
