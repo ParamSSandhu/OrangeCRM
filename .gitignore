@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+.idea/
+*.txt
+target/*
+target
+src/test/resources/binaries/*
+src/test/resources/extendReports/*

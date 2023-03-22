@@ -24,20 +24,22 @@ public class LoginTests extends TestActions {   //Only call the test steps in th
         String welcomeMsg = welcomePage.getWelcomeMessage();
         System.out.println(welcomeMsg);
         TestAsserts.checkIfValuesAreEqual(welcomeMsg, welcomeUser);
+        welcomePage.logout();
+        Thread.sleep(5000);
     }
 
-//    @Test
-//    public void validateLoginFunctionalityUsingRandomData() throws Exception{       //Generate random username and password
-//        String username = DataGenerator.getUsername();
-//        String password = DataGenerator.getPassword();
-//        System.out.println(username + "  " + password);
-//        LoginPage loginPage = new LoginPage(driver.get());
-//        WelcomePage welcomePage = loginPage.enterUsername(username).enterPassword(password).clickSubmit();
-//        String welcomeMsg = welcomePage.getWelcomeMessage();
-//        System.out.println(welcomeMsg);
-//        Thread.sleep(5000);
-//        TestAsserts.checkIfValuesAreEqual(welcomeMsg, "Paramvir Sandhu");
-//    }
+    @Test
+    public void validateLoginFunctionalityUsingRandomData() throws Exception{       //Generate random username and password
+        String username = DataGenerator.getFirstName();
+        String password = DataGenerator.getPassword();
+        System.out.println(username + "  " + password);
+        LoginPage loginPage = new LoginPage(driver.get());
+        WelcomePage welcomePage = loginPage.enterUsername(username).enterPassword(password).clickSubmit();
+        String invalidLogin = loginPage.InvalidLogin();
+        System.out.println(invalidLogin);
+        TestAsserts.checkIfValuesAreEqual(invalidLogin,"Invalid credentials");
+        Thread.sleep(5000);
+    }
 
 //    @Test (invocationCount = 1)         //number of times you want the test to run
 //    public void validateLoginFunctionality2() throws Exception{
