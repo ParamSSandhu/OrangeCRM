@@ -3,8 +3,13 @@
     {
       "username": "Admin",
       "password": "admin123",
-      "welcomeUser": "Welcome Paul"
+      "welcomeUser": "Dashboard"
     }
 
-    ]
+  ],
+  "validateLoginFunctionalityUsingRandomData": [
+    {
+      "invalidLogin": "Invalid credentials"
+    }
+  ]
 }

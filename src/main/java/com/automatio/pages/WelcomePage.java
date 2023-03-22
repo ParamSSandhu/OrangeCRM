@@ -12,10 +12,12 @@ public class WelcomePage extends BaseActions {
     }
 
     public String getWelcomeMessage(){
-        return getTextFromElement("HomePage.lbl_welcomeMsg");
+        return getTextFromElement("HomePage.lbl_Dashboard");
     }
 
-
-
-
+    public LoginPage logout(){
+        clickIt("HomePage.logout");
+        clickIt("HomePage.logout2");
+        return new LoginPage(driver);
+    }
 }

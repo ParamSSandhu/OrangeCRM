@@ -21,4 +21,7 @@ public class LoginPage extends BaseActions {        //Page Object Model
         clickIt("LoginPage.btn_Submit");
         return new WelcomePage(driver);
     }
+    public String InvalidLogin(){
+        return getTextFromElement("LoginPage.invalid_login");
+    }
 }
