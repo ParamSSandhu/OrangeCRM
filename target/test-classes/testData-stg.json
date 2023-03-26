@@ -4,16 +4,12 @@
       "username": "AdminSTG",
       "password": "admin123",
       "welcomeUser": "Bienvenido Christiano"
-    },
-    {
-      "username": "Admin1",
-      "password": "admin12334",
-      "welcomeUser": "Bienvenido Christiano"
-    },
-    {
-      "username": "Admin13",
-      "password": "admin123342",
-      "welcomeUser": "Bienvenido Christiano"
     }
-    ]
+    ],
+
+  "validateLoginFunctionalityUsingRandomData": [
+    {
+      "invalidLogin": "Invalid credentials"
+    }
+  ]
 }

@@ -15,5 +15,10 @@
       "password": "admin123342",
       "welcomeUser": "Bienvenido Christiano"
     }
-    ]
+    ],
+  "validateLoginFunctionalityUsingRandomData": [
+    {
+      "invalidLogin": "Invalid credentials"
+    }
+  ]
 }
